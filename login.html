@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+          <meta name="description" content="Online Game Store" />
+          <title>GameHub</title>
+          <link href="css/index.css" rel="stylesheet" type="text/css" />
+          <link href="css/login.css" rel="stylesheet"  type="text/css">
+      </head>
+      <body>
+        <header>
+          <img src="images/gamehub-logo_bg-removed.png" alt="GameHub logo" class="logo">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="login.html">Login</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <label for="search"></label>
+            <input type="search" name="search" class="search" placeholder="Search">
+          </div>
+        </header>
+        <main>
+          <h1>Already a member? Login here</h1>
+            <form>
+              <div class="container">
+                <label for="username"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="password"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password" required>
+                  <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+               </label>
+            </div>
+            <div class="container">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="password">Forgot <a href="#">password?</a></span>
+            </div>
+            </form>
+        </main>
+          <footer><span class="copy">Copyright &copy; GameHub.com 2021</span></footer>
+      </body>
+   </html> 
