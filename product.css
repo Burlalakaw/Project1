@@ -1,0 +1,22 @@
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.item {
+    margin:10px;
+    align-content: center;
+}
+
+.row {
+    
+}
+
+.column {
+
+}
+
