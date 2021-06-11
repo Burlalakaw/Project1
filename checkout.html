@@ -25,118 +25,74 @@
           </div>
         </header>
         <main>
-          <div class="row">
-            <div class="container">
-              <form action="/action_page.php">
-                <div class="row">
-                  <h3>Billing Address</h3>
-                  <label for="fullname" class="fa fa-user">Full Name</label>
-                  <input type="text" id="fullname" name="firstname" placeholder="John M. Doe">
-                  <label for="email" class="fa fa-envelope">Email</label>
-                  <input type="text" id="email" name="email" placeholder="john@example.com">
-                  <label for="address" class="fa fa-address-card-o">Address</label>
-                  <input type="text" id="adress" name="address" placeholder="542 W. 15th Street">
-                  <label for="city" class="fa fa-institution">City</label>
-                  <input type="text" id="city" name="city" placeholder="New York">
-                </div>
-              </form>
-              <div class="row">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
-              </div>
-              <label for="zip">Zip</label>
-              <input type="text" id="zip" name="zip" placeholder="10001">
-            </div>
-          </div>
-          <h3>Payment</h3>
-          <label for="fname">Accepted Cards</label>
-          <div class="icon-container">
-            <i class="fa fa-cc-visa" style="color:navy;"></i>
-            <i class="fa fa-cc-amex" style="color:blue;"></i>
-            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-            <i class="fa fa-cc-discover" style="color:orange;"></i>
-          </div>
-          <label for="cname">Name on Card</label>
-          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-          <label for="ccnum">Credit card number</label>
-          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-          <label for="expmonth">Exp Month</label>
-          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          <form name="ShoppingList">
+            <fieldset>
+              <legend>Shopping cart</legend>
+              <label>Item: <input type="text" name="name"></label>
+              <label>Quantity: <input type="text" name="data"></label>
       
-          <div class="row">
-            <label for="expyear">Exp Year</label>
-            <input type="text" id="expyear" name="expyear" placeholder="2018">
-          </div>
-          <div>
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" placeholder="352">
-          </div>
-          <div>
-            <form>
-              <label>
-                <input type="checkbox" checked="checked" name="sameaddress"> Shipping address same as billing
-              </label>
-              <input type="submit" value="Continue to checkout" class="button">
-            </form>
+              <input type="button" value="Save" onclick="SaveItem()">
+              <input type="button" value="Update" onclick="ModifyItem()">
+              <input type="button" value="Delete" onclick="RemoveItem()">
+            </fieldset>
+            <div id="items_table">
+              <h2>Shopping List</h2>
+              <table id="list"></table>
+              <label><input type="button" value="Clear" onclick="ClearAll()">
+                * Delete all items</label>
+            </div>
+          </form>
+          <div class="card-confirm">
+            <button class="button button-confirm">Complete Order</button>
           </div>
           <div class="container">
-            <h4>Cart</h4>
-            <span class="price" style="color: #1d2540">
-              <i class="fa fa-shopping-cart"></i>
-              <b>4</b>
-            </span>
+            <div class="card-checkout">
+              <div class="card-logo"></div>
+              <div class="card-options">
+                <form class="card-details">
+                  <input class="cc-name" placeholder="Card Holder" required>
+                  <input class="cc-number" placeholder="Card Number" data-numeric required>
+                  <input class="cc-expiry inline" placeholder="Expiry Date" required>
+                  <input class="cc-cvc" placeholder="CVC" data-numeric required>
+                </form>
+              </div>
+            </div>
           </div>
-          <p><a href="#">Product 1</a> <span class="price">#</span></p>
-          <p><a href="#">Product 2</a> <span class="price">#</span></p>
-          <p><a href="#">Product 3</a> <span class="price">#</span></p>
-          <p><a href="#">Product 4</a> <span class="price">#</span></p>
-          <hr>
-          <p>Total <span class="price" style="color: #1d2540;">#</span></p>
+          <p>Having problem with checkout? <a href="contact.html">Contact Us</a></p>
         </main>
-        <footer>
-          <section>
-            <div class="rows-wrapper">
-              <div class="row">
-                <div class="column">
-                  <h2>Quick Links</h2>
-                  <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                    <li><a href="gameinfo.html">Game-info</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column">
-                <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                  <li><a href="#">Term & Condition</a></li>
-                  <li><a href="#">Cookies</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column">
-                <h2>Follow us here!</h2>
-                <ul>
-                  <li><a href="http://twitter.com">Twitter</a></li>
-                  <li><a href="http://facebook.com">Facebook</a></li>
-                  <li><a href="http://discord.com">Discord</a></li>
-                  <li><a href="http://instagram.com">Instagram</a></li>
-                </ul>
-              </div>
-            </div>
-            <div>
+        <footer id="footer" class="section footer">
+          <div class="container">
+            <div class="footer_logo">
               <img src="images/gamehub-logo_bg-removed.png" alt="Gamehub Logo">
             </div>
-          </section><span class="copy">Copyright &copy; GameHub.com 2021</span>
+            <div class="footer_top">
+              <div class="footer_top_box">
+                <h3>Quick Links</h3>
+                <a href="login.html">Login</a>
+                <a href="product.html">Product</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="gameinfo.html">Game-info</a>
+                <a href="registration.html">Registration</a>
+                <a href="contact.html">Contact</a>
+              </div>
+              <div class="footer_top_box">
+                <h3>Information</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Term & Condition</a>
+                <a href="#">Cookies</a>
+                <a href="about.html">About Us</a>
+              </div>
+              <div class="footer_top_box">
+                <h3>Follow Us Here!</h3>
+                <a href="http://twitter.com">Twitter</a>
+                <a href="http://facebook.com">Facebook</a>
+                <a href="http://discord.com">Discord</a>
+                <a href="http://instagram.com">Instagram</a>
+              </div>
+            </div>
+            <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
+          </div>
         </footer>
       </body>
-    </html>
- 
+  </html>
