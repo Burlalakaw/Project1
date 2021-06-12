@@ -13,10 +13,37 @@
 }
 
 .row {
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1 1 400px;
+    text-align: center;
+}
 
+.img-column {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 18px;
 }
 
