@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-  <html lang="en">
-      <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-          <meta name="description" content="Online Game Store" />
-          <title>GameHub</title>
-          <link href="css/index.css" rel="stylesheet" type="text/css" />
-          <link href="css/about.css" rel="stylesheet" type="text/css" />
-      </head>
-      <body>
-        <header>
-          <img src="images/gamehub-logo_bg-removed.png" alt="GameHublogo" class="logo">
+    <html lang="en">
+         <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+              <meta name="description" content="Online Game Store" />
+              <title>GameHub</title>
+              <!-- Fontawesome css -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <link href="css/index.css" rel="stylesheet" type="text/css" />
+              <link rel="stylesheet" href="css/hamburger.css" type="text/css">
+          </head>
+          <body>
+            <header>
+                <img src="images/gamehub-logo_bg-removed.png" alt="GameHublogo" class="logo">
+                <div class="hamburger">
+                    <i class="fa fa-bars"></i><input type="checkbox" id="hamburger-menu" name="hamburger-menu" />
+                </div>
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -25,6 +30,25 @@
           </div>
         </header>
         <main>
+          <h1>Contact Us</h1>
+          <fieldset>
+            <div class="container">
+              <form action="action_page.php">
+        
+                <label for="firstname">Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+        
+                <label for="lname">email</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        
+                <input type="submit" value="Submit">
+                <a href="login.html">Login</a>
+              </form>
+            </div>
+          </fieldset>
           <h1>About Us</h1>
               <p>GameHub is an online store that sells a wide selections of video games both new and pre-owned from older games until the latest trending game</p>
               <p>We offer exemplary service to secure that our customer's need are well-provided with great satisfaction.</p>
@@ -52,8 +76,8 @@
                       <a href="product.html">Product</a>
                       <a href="checkout.html">Checkout</a>
                       <a href="gameinfo.html">Game-info</a>
-                      <a href="registration.html">Registration</a>
-                      <a href="contact.html">Contact</a>
+                      <a href="login.html">Register</a>
+                      <a href="about.html">Contact</a>
                   </div>
                   <div class="footer_top_box">
                       <h3>Information</h3>
@@ -61,7 +85,7 @@
                       <a href="#">Privacy policy</a>
                       <a href="#">Term & Condition</a>
                       <a href="#">Cookies</a>
-                      <a href="about.html">About Us</a>
+                      
                   </div>
                   <div class="footer_top_box">
                       <h3>Follow Us Here!</h3>
@@ -74,5 +98,5 @@
               <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
           </div>
       </footer>
-      </body>
-  </html>
+    </body>
+</html>
