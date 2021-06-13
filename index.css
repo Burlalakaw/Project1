@@ -190,6 +190,7 @@ h2 {
 .game-title:hover {
     background: #5394DB; 
     transition: all 0.4s; 
+    border-radius: 15px;
 }
    
 p, h1, h2 {
@@ -227,6 +228,15 @@ p {
     list-style: none;
     text-decoration: none;
     color: white;
+}
+
+.footer_top_box a:hover {
+    background: #1D2540; 
+    transition: all 0.4s;  
+    border-radius: 15px;
+    width: 115px;
+   
+   
 }
 
 h3 {
@@ -450,3 +460,4 @@ h3 {
         width: 120px;
     }
 }
+
