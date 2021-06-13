@@ -1,120 +1,97 @@
-}
-
-body {
-    background-color: #17689D;
-    text-transform: uppercase;
-}
-
-.card-checkout {
-    position: absolute;
-    width: 30%;
-    min-width: 350px;
-    height: 70%;
-    min-height: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
-}
-
-.card-logo {
-    width: 100%;
-    height: 35%;
-    background: url('http://digest.dx3canada.com/wp-content/uploads/2013/01/Visa-Logo.jpg');
-    background-size: 100px 45px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.card-options {
-    width: 100%;
-    height: 55%;
-    padding: 10px;
-    background-color: #3F8EDD;
-}
-
-.card-details {
-    width: 100%;
-    height: 100%;
-}
-
-.card-details input {
-    width: 100%;
-    height: 15%;
-    padding: 10px 20px;
-    margin-bottom: 1px;
-    color: #fff;
-    background-color: #4EA0F4;
-    border: 0;
-    font-family: Roboto;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.card-details input.inline {
-    margin-right: 1px;
-}
-
-.card-details input.cc-expiry {
-    width: 69.7%;
-}
-
-.card-details input.cc-cvc {
-    width: 30%;
-}
-
-.card-details input::-webkit-input-placeholder {
-    color: #C5DFFF;
-}
-
-.card-details input::-moz-placeholder {
-    color: #C5DFFF;
-}
-
-.card-details input:-moz-placeholder {
-    color: #C5DFFF;
-}
-
-.card-details input:-ms-input-placeholder {
-    color: #C5DFFF;
-}
-
-.card-details input:placeholder-shown {
-    color: #C5DFFF;
-}
-
-.card-confirm {
-    position: relative;
-    width: 100%;
-    height: 10%;
-}
-
-.button {
-    width: 100%;
-    color: #fff;
-    font-family: Roboto;
-    font-weight: 500;
-    text-transform: uppercase;
-    border: 0;
-}
-
-.button-confirm {
-    height: 100%;
-    background-color: #2EE940;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: pointer;
-}
-
-.button-confirm:focus {
-    outline: 0;
-}
-
-.button-scan {
-    height: 15%;
-    background-color: #62AEFA;
-    cursor: pointer;
-}
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+          <meta name="description" content="Online Game Store" />
+          <title>GameHub</title>
+          <link href="css/index.css" rel="stylesheet" type="text/css" />
+          <link href="checkout.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body>
+        <header>
+          <img src="images/gamehub-logo_bg-removed.png" alt="GameHublogo" class="logo">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <label for="search"></label>
+            <input type="search" name="search" class="search" placeholder="Search">
+          </div>
+        </header>
+        <main>
+          <h1>Checkout</h1>
+            <fieldset>
+              <legend>Shopping cart</legend>
+              <label>Item: <input type="text" name="name"></label>
+              <label>Quantity: <input type="text" name="data"></label>
+      
+              <input type="button" value="Save" onclick="SaveItem()">
+              <input type="button" value="Update" onclick="ModifyItem()">
+              <input type="button" value="Delete" onclick="RemoveItem()">
+           
+            <div id="items_table">
+              <table id="list"></table>
+              <label><input type="button" value="Clear" onclick="ClearAll()">
+                * Delete all items</label>
+            </div>
+          <div class="card-confirm">
+            <button class="button button-confirm">Complete Order</button>
+          </div>
+          <div class="container">
+            <div class="card-checkout">
+              <div class="card-logo"></div>
+              <div class="card-options">
+                <form class="card-details">
+                  <input class="cc-name" placeholder="Card Holder" required>
+                  <input class="cc-number" placeholder="Card Number" data-numeric required>
+                  <input class="cc-expiry inline" placeholder="Expiry Date" required>
+                  <input class="cc-cvc" placeholder="CVC" data-numeric required>
+                </form>
+              </fieldset> 
+              </div>
+            </div>
+          </div>
+          <p>Having problem with checkout? <a href="contact.html">Contact Us</a></p>
+        </main>
+        <footer id="footer" class="section footer">
+          <div class="container">
+            <div class="footer_logo">
+              <img src="images/gamehub-logo_bg-removed.png" alt="Gamehub Logo">
+            </div>
+            <div class="footer_top">
+              <div class="footer_top_box">
+                <h3>Quick Links</h3>
+                <a href="login.html">Login</a>
+                <a href="product.html">Product</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="gameinfo.html">Game-info</a>
+                <a href="registration.html">Registration</a>
+                <a href="contact.html">Contact</a>
+              </div>
+              <div class="footer_top_box">
+                <h3>Information</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Term & Condition</a>
+                <a href="#">Cookies</a>
+                <a href="about.html">About Us</a>
+              </div>
+              <div class="footer_top_box">
+                <h3>Follow Us Here!</h3>
+                <a href="http://twitter.com">Twitter</a>
+                <a href="http://facebook.com">Facebook</a>
+                <a href="http://discord.com">Discord</a>
+                <a href="http://instagram.com">Instagram</a>
+              </div>
+            </div>
+            <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
+          </div>
+        </footer>
+      </body>
+  </html>
