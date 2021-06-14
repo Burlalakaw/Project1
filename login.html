@@ -1,106 +1,88 @@
 <!DOCTYPE html>
-    <html lang="en">
-         <head>
-              <meta charset="UTF-8" />
-              <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-              <meta name="description" content="Online Game Store" />
-              <title>GameHub</title>
-              <!-- Fontawesome css -->
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-              <link href="css/index.css" rel="stylesheet" type="text/css" />
-              <link rel="stylesheet" href="css/hamburger.css" type="text/css">
-          </head>
-          <body>
-            <header>
-                <img src="images/gamehub-logo_bg-removed.png" alt="GameHublogo" class="logo">
-                <div class="hamburger">
-                    <i class="fa fa-bars"></i><input type="checkbox" id="hamburger-menu" name="hamburger-menu" />
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+          <meta name="description" content="Online Game Store" />
+          <title>GameHub</title>
+          <!-- Fontawesome css -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="css/index.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="css/hamburger.css" type="text/css">
+      </head>
+      <body>
+        <header>
+            <img src="images/gamehub-logo_bg-removed.png" alt="GameHublogo" class="logo">
+            <div class="hamburger">
+                <i class="fa fa-bars"></i><input type="checkbox" id="hamburger-menu" name="hamburger-menu" />
+            </div>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="sell.html">Sell</a></li> 
+                <li><a class="active" href="login.html">Login</a></li> 
+                </ul>
+            </nav> 
+                <div class="search-bar">
+                    <label for="search"></label>
+                    <input type="search" name="search" class="search" placeholder="Search">
                 </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="product.html">Product</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a class="active" href="login.html">Login</a></li>
-            </ul>
-          </nav>
-          <div class="search-bar">
-            <label for="search"></label>
-            <input type="search" name="search" class="search" placeholder="Search">
-          </div>
-        </header>
-        <main>
-          <form>
+            </header> 
+            <main>
             <fieldset>
-              <h1>Register here</h1>
-              <legend>Please fill in this form to create an account.</legend>
-              <label>Email:
-              <input type="text" name="Email" /></label>
-      
-              <label for="password">Password:</label>
-              <input type="password"  name="password" /> </label>
-      
-              <label for="password-repeat">Repeat Password</label>
-              <input type="password"  name="password-repeat" /></label>
-              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-              <button type="submit" class="registerbutton">Register</button>
-              <p>Already have an account?</p> 
-              <button><a href="#">Login</a></button>
-            </fieldset> 
-          </form>
-          <fieldset>
-          <h2>Login here</h2>
-          <form>
-            <div class="container">
-              <label for="username">Username</label>
-              <input type="text" placeholder="Enter Username" name="username" required>
-              <label for="password">Password</label>
-              <input type="password" placeholder="Enter Password" name="password" required>
-              <button type="submit">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-            <div class="container">
-              <button type="button" class="cancelbutton">Cancel</button>
-              <span class="password">Forgot <a href="#">password?</a></span>
-            </div>
-          </form>
-        </fieldset>
-      </main>
-      <footer id="footer" class="section footer">
-        <div class="container">
-            <div class="footer_logo">
-                <img src="images/gamehub-logo_bg-removed.png" alt="Gamehub Logo">
-            </div>
-            <div class="footer_top">
-                <div class="footer_top_box">
-                    <h3>Quick Links</h3>
-                    <a href="login.html">Login</a>
-                    <a href="product.html">Product</a>
-                    <a href="checkout.html">Checkout</a>
-                    <a href="gameinfo.html">Game-info</a>
-                    <a href="login.html">Register</a>
-                    <a href="about.html">Contact</a>
+              <h1>Login here</h1>
+              <form>
+                <div class="container">
+                  <label for="username">Username</label>
+                  <input type="text" placeholder="Enter Username" name="username" required>
+                  <label for="password">Password</label>
+                  <input type="password" placeholder="Enter Password" name="password" required>
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
                 </div>
-                <div class="footer_top_box">
-                    <h3>Information</h3>
-                    <a href="#">FAQ</a>
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Term & Condition</a>
-                    <a href="#">Cookies</a>
-                    
+                <div class="container">
+                  <button type="button" class="cancelbutton">Cancel</button>
+                  <span class="password">Forgot <a href="#">password?</a></span>
                 </div>
-                <div class="footer_top_box">
-                    <h3>Follow Us Here!</h3>
-                    <a href="http://twitter.com">Twitter</a>
-                    <a href="http://facebook.com">Facebook</a>
-                    <a href="http://discord.com">Discord</a>
-                    <a href="http://instagram.com">Instagram</a>
-                </div>      
-            </div>
-            <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
-        </div>
-    </footer>
-  </body>
-</html>
+              </form>
+            </fieldset>
+          </main>
+          <footer id="footer" class="section footer">
+             <div class="container">
+                 <div class="footer_logo">
+                     <img src="images/gamehub-logo_bg-removed.png" alt="Gamehub Logo">
+                 </div>
+                 <div class="footer_top">
+                     <div class="footer_top_box">
+                         <h3>Quick Links</h3>
+                         <a href="login.html">Login</a>
+                         <a href="product.html">Product</a>
+                         <a href="checkout.html">Checkout</a>
+                         <a href="gameinfo.html">Game-info</a>
+                         <a href="register.html">Register</a>
+                         <a href="contact.html">Contact</a>
+                     </div>
+                     <div class="footer_top_box">
+                         <h3>Information</h3>
+                         <a href="#">FAQ</a>
+                         <a href="#">Privacy policy</a>
+                         <a href="#">Term & Condition</a>
+                         <a href="#">Cookies</a>
+                         
+                     </div>
+                     <div class="footer_top_box">
+                         <h3>Follow Us Here!</h3>
+                         <a href="http://twitter.com">Twitter</a>
+                         <a href="http://facebook.com">Facebook</a>
+                         <a href="http://discord.com">Discord</a>
+                         <a href="http://instagram.com">Instagram</a>
+                     </div>      
+                 </div>
+                 <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
+             </div>
+         </footer>
+       </body>
+ </html>
