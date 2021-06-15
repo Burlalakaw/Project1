@@ -8,6 +8,7 @@
           <!-- Fontawesome css -->
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <link href="css/index.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="css/about.css" type="text/css" />
           <link rel="stylesheet" href="css/hamburger.css" type="text/css">
       </head>
       <body>
@@ -21,23 +22,25 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="sell.html">Sell</a></li> 
-                <li><a class="active" href="login.html">Login</a></li> 
+                <li><a href="login.html">Login</a></li> 
                 </ul>
             </nav> 
-                <div class="search-bar">
-                    <label for="search"></label>
-                    <input type="search" name="search" class="search" placeholder="Search">
-                </div>
+            <form class="search">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
             </header> 
             <main>
-            <fieldset>
               <h1>Login here</h1>
+              <fieldset>
               <form>
                 <div class="container">
                   <label for="username">Username</label>
                   <input type="text" placeholder="Enter Username" name="username" required>
+                  
                   <label for="password">Password</label>
                   <input type="password" placeholder="Enter Password" name="password" required>
+                 
                   <button type="submit">Login</button>
                   <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -49,7 +52,7 @@
                 </div>
               </form>
             </fieldset>
-          </main>
+            </main>
           <footer id="footer" class="section footer">
              <div class="container">
                  <div class="footer_logo">
