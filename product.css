@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-.consoles-container, .seller-container, .offer-container, .genre-container {
+.consoles-container, .genre-container {
     width: 50%;
     margin: 0 auto;
     padding: 20px;
@@ -14,5 +14,54 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 15px;
-}  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 33.3333%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 1.5rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.img-column {
+    margin: 0 auto;
+}
+
+
+
+
+
 
