@@ -1,49 +1,18 @@
-.container-1 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap%27');
+
+body {
+    background-color: #1D2540;
+    font-family: 'Open Sans', poppins, roboto;
+    margin: 0;
 }
 
-.item {
-    margin:10px;
-    align-content: center;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1400px;
+.consoles-container, .seller-container, .offer-container, .genre-container {
+    width: 50%;
     margin: 0 auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1 1 400px;
-    text-align: center;
-}
-
-.img-column {
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 38px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-h3 {
-    font-size: 18px;
-}
+    padding: 20px;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+}  
 
