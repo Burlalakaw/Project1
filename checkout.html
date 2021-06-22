@@ -1,104 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-          <meta name="description" content="Online Game Store" />
-          <title>GameHub</title>
-          <!-- Fontawesome css -->
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <link href="css/index.css" rel="stylesheet" type="text/css" />
-          <link rel="stylesheet" href="css/hamburger.css" type="text/css">
-      </head>
-      <body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Online game store by GameHub" />
+        <title>GameHub|Home</title>
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+        <link href="css/checkout.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
         <header>
-            <img src="images/gamehub-logo_bg-removed.png" alt="GameHublogo" class="logo">
-            <div class="hamburger">
-                <i class="fa fa-bars"></i><input type="checkbox" id="hamburger-menu" name="hamburger-menu" />
-            </div>
+            <img src="images/gamehub-logo_bg-removed.png" alt="GameHub logo" class="logo">
             <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="sell.html">Sell</a></li> 
-                <li><a href="login.html">Login</a></li> 
+                <div class='logo-area'></div>
+                   <input class="check" type="checkbox">
+                   <div class="ham-menu"></div>
+                   <div class="menuline"></div>
+                </div>
+                <ul class='menulist'>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
-            </nav> 
+            </nav>
             <form class="search">
-              <input type="text" placeholder="Search" name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-            </header> 
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </header>
         <main>
-          <h1>Checkout</h1>
-            <fieldset>
-              <legend>Shopping cart</legend>
-              <label>Item: <input type="text" name="name"></label>
-              <label>Quantity: <input type="text" name="data"></label>
+          <div class="checkout-container">
+         <h1>Checkout</h1>
+          <h2><b>Shopping cart</b></h2>
+          <label for="No.of Items"><b>No. of Items</b></label>
+          <input type="number" name="no.items">
+          <label for="Total"><b>Total</b></label>
+          <input type="number" name="Total" value="submit"> 
       
-              <input type="button" value="Save" onclick="SaveItem()">
-              <input type="button" value="Update" onclick="ModifyItem()">
-              <input type="button" value="Delete" onclick="RemoveItem()">
-           
-            <div id="items_table">
-              <table id="list"></table>
-              <label><input type="button" value="Clear" onclick="ClearAll()">
-                * Delete all items</label>
-            </div>
-            <div class="container">
-              <div class="card-checkout">
-                <div class="card-logo"></div>
-                <div class="card-options">
-                  <form class="card-details">
-                    <input class="cc-name" placeholder="Card Holder" required>
-                    <input class="cc-number" placeholder="Card Number" data-numeric required>
-                    <input class="cc-expiry inline" placeholder="Expiry Date" required>
-                    <input class="cc-cvc" placeholder="CVC" data-numeric required>
-                  </form>
-
-          <div class="card-confirm">
-            <button class="button button-confirm"><a href="confirmation.html">Complete Order</a></button>
-          </div>
-         
-              </fieldset> 
-              </div>
+            <div class="card-checkout">
+              <div class="card-logo"></div>
+              <div class="card-options">
+                <form class="card-details">
+                  <input class="cc-name" placeholder="Card Holder" required>
+                  <input class="cc-number" placeholder="Card Number" data-numeric required>
+                  <input class="cc-expiry inline" placeholder="Expiry Date" required>
+                  <input class="cc-cvv" placeholder="CVV" data-numeric required>
+                </form>
+                <div class="card-confirm">
+                  <button class="button button-confirm"><a href="confirmation.html">Complete Order</a></button>
+                </div>
             </div>
           </div>
+        </div>
           <p>Having problem with checkout? <a href="contact.html">Contact Us</a></p>
         </main>
         <footer id="footer" class="section footer">
-           <div class="container">
-               <div class="footer_logo">
-                   <img src="images/gamehub-logo_bg-removed.png" alt="Gamehub Logo">
-               </div>
-               <div class="footer_top">
-                   <div class="footer_top_box">
-                       <h3>Quick Links</h3>
-                       <a href="login.html">Login</a>
-                       <a href="product.html">Product</a>
-                       <a href="checkout.html">Checkout</a>
-                       <a href="gameinfo.html">Game-info</a>
-                       <a href="register.html">Register</a>
-                       <a href="contact.html">Contact</a>
-                   </div>
-                   <div class="footer_top_box">
-                       <h3>Information</h3>
-                       <a href="#">FAQ</a>
-                       <a href="#">Privacy policy</a>
-                       <a href="#">Term & Condition</a>
-                       <a href="#">Cookies</a>
-                       
-                   </div>
-                   <div class="footer_top_box">
-                       <h3>Follow Us Here!</h3>
-                       <a href="http://twitter.com">Twitter</a>
-                       <a href="http://facebook.com">Facebook</a>
-                       <a href="http://discord.com">Discord</a>
-                       <a href="http://instagram.com">Instagram</a>
-                   </div>      
-               </div>
-               <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
-           </div>
-       </footer>
-     </body>
+          <div class="container">
+            <div class="footer_logo">
+              <img src="images/gamehub-logo_bg-removed.png" alt="Gamehub Logo">
+            </div>
+            <div class="footer_top">
+              <div class="footer_top_box">
+                <h3>Quick Links</h3>
+                <a href="login.html">Login</a>
+                <a href="product.html">Product</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="gameinfo.html">Game-info</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+              </div>
+              <div class="footer_top_box">
+                <h3>Information</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Term & Condition</a>
+                <a href="#">Cookies</a>
+      
+              </div>
+              <div class="footer_top_box">
+                <h3>Follow Us Here!</h3>
+                <a href="http://twitter.com">Twitter</a>
+                <a href="http://facebook.com">Facebook</a>
+                <a href="http://discord.com">Discord</a>
+                <a href="http://instagram.com">Instagram</a>
+              </div>
+            </div>
+            <section id="copyright"><span class="copy">Copyright &copy; GameHub.com 2021</span></section>
+          </div>
+        </footer>
+      </body>
 </html>
